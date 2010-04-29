@@ -1,9 +1,17 @@
 @import "../_commons/clear";
+@import "../_commons/common";
+@import "../_commons/interface.elements";
 @import "../_commons/interface.tip";
 
 @import "generator.global";
 @import "generator.default";
 
+
+#sf_admin_container {
+  h1 {
+    font-size: 2em
+  }
+}
 /* Filas del listado */
 .sf_admin_list {
   a {
@@ -11,26 +19,46 @@
   }
   table {
     .border-radius(6px);
+    border-collapse: collapse;
+    background: #555;
+    width: 100%;
+    .box-shadow(0, 1px, 5px, rgba(0, 0, 0, 0.3));
+    text-shadow: none;
+
     thead {
+      height: 28px;
+      line-height: 28px;
+      color: #ffffff;
+      text-shadow: 0 1px 0 #333, 1px 1px 0 #333, -1px 1px 0 #333, -1px -1px 0 #333;
+      a {
+        color: #00ddff;
+      }
       tr {
-        height: 25px; line-height: 25px;
-        font-size: 12px;
+        font-size: 1.2em;
         th {
         }
       }
     }
 
     tfoot {
+      color: #ddeedd;
+      tr {
+        padding: 2px 10px;
+        height: 26px;
+      }
       /* Paginator */
       .sf_admin_pagination {
-        padding: 2px;
+        float: right;
+        padding: 2px 5px;
+        margin: 2px 20px 0 0;
+        font-size: 1.1em;
+        background-color: #444;
+        .border-radius(4px);
 
         a, span.page {
           .border-radius(2px);
           width: 30px; height: 16px;
           line-height: 16px;
-          padding: 0 !important;
-          margin: 0 1px 0 0 !important;
 
           display: inline-block;
           color: #DDD;
@@ -42,36 +70,56 @@
           }
         }
 
+        a.link-review {
+          margin-right: 4px;
+        }
+        a.link-forward {
+          margin-left: 4px;
+        }
+
         span.page {
           color: #000;
           background-color: #FA0;
         }
-
-        img {
-
-        }
+      }
+      .pagination-details {
+        float: right;
+        line-height: 20px;
+        font-size: 1.2em;
+        margin: 2px 20px 0 10px;
+        font-weight: normal;
+        color: #fff;
+        text-shadow: 0 1px 0 #222, 1px 1px 0 #222, -1px 1px 0 #222, -1px -1px 0 #222;
       }
     }
 
     tbody {
       tr {
+        border-bottom: 1px solid #ddd;
+        cursor: default;
+
         :nth-child(even) {
-          background-color: #e0f5e0;
+          background-color: #eaf5ea;
           color: #242;
         }
 
         :nth-child(odd) {
-          background-color: #f5f5e0;
+          background-color: #f5f5ea;
           color: #422;
         }
 
         :hover {
-          background-color: #AEF !important;
+          background-color: #AEF;
         }
 
         td {
-          font-size: 14px;
-          padding: 5px;
+          font-size: 1.3em;
+          padding: 3px 5px;
+          color: #333;
+        }
+
+        td:first-child {
+          border-left: 1px solid #aaa;
         }
 
         td.object_actions {
@@ -144,70 +192,17 @@
   }
 }
 
-/* Styles primarily to form LIST */
-.sf_admin_list {
-  table {
-    font-size: 12px;
-    border-collapse: collapse;
-    background: #556677;
-    width: 100%;
-    
-    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-    text-shadow: none;
-
-    thead { color: #ffffff;
-      a { color: #00ddff; }
-    }
-
-    tbody {
-      tr.sf_admin_row {
-        border-bottom: 1px solid #dddddd;
-        cursor: default;
-      }
-
-      td { padding: 3px 5px; }
-    }
-    tfoot { color: #ddeedd; }
-  }
-
-  .sf_admin_pagination {
-    padding: 2px;
-
-    a, span {
-      .border-radius(2px);
-      width: 25px; height: 16px;
-      line-height: 16px;
-      display: inline-block;
-      color: #DDD;
-      background-color: #09D;
-
-      :hover {
-        background-color: #0BF;
-        color: #004;
-      }
-    }
-
-
-    span.page {
-      color: #000;
-      background-color: #FA0;
-    }
-
-    img {
-
-    }
-  }
-}
-
 /* actions */
 ul.sf_admin_actions {
   list-style: none;
+  display: inline-block;
+  margin: 5px 0;
+  padding: 5px;
+  background-color: rgba(200, 200, 200, 0.7);
+  .border-radius;
 
   > li {
-
     display: inline-block;
-
-    
   }
 
   > li.sf_admin_action_delete {
@@ -215,13 +210,7 @@ ul.sf_admin_actions {
     a:hover       { background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F44), to(#E33));}
   }
 
-  input, a {
-    height: 20px; line-height: 20px;
-    padding: 3px 10px; margin: 0;
-    display: inline-block;
+  a {
+    .link-button;
   }
-}
-
-.sf_admin_batch_actions_choice {
-  display: inline-block;
 }

@@ -1,10 +1,9 @@
-
 <div class="sf_admin_pagination">
   <a href="[?php echo url_for('@<?php echo $this->getUrlForAction('list') ?>') ?]?page=1">
     <span class="rreview">&laquo;&laquo;</span>
   </a>
 
-  <a href="[?php echo url_for('@<?php echo $this->getUrlForAction('list') ?>') ?]?page=[?php echo $pager->getPreviousPage() ?]">
+  <a href="[?php echo url_for('@<?php echo $this->getUrlForAction('list') ?>') ?]?page=[?php echo $pager->getPreviousPage() ?]" class="link-review">
     <span class="review">&laquo;</span>
   </a>
 
@@ -16,7 +15,7 @@
     [?php endif; ?]
   [?php endforeach; ?]
 
-  <a href="[?php echo url_for('@<?php echo $this->getUrlForAction('list') ?>') ?]?page=[?php echo $pager->getNextPage() ?]">
+  <a href="[?php echo url_for('@<?php echo $this->getUrlForAction('list') ?>') ?]?page=[?php echo $pager->getNextPage() ?]" class="link-forward">
     <span class="forward">&raquo;</span>
   </a>
 
