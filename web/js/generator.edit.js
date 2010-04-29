@@ -1,9 +1,7 @@
-window.addEvent('domready', function (ev) {
-  //var inputsDate = $$('input[type="text"]');
+window.addEvent('domready', function () {
+  // add datapicker to input type date
   var inputsDate = $$('input.input_date');
-
   inputsDate.each(function (inputDate) {
-    console.debug ("inputDate -> ", inputDate);
     inputDate.addCalendar()
   })
 })
