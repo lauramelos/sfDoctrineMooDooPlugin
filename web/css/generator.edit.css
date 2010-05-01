@@ -148,10 +148,6 @@ section, nav { display: block; }
   position: absolute;
 }
 .tip_inside:hover .tip { display: block; }
-*:focus {
-  outline: 0;
-  outline: none;
-}
 input[type=button] {
   -khtml-appearance: none;
   font-size: 14px;
@@ -159,15 +155,15 @@ input[type=button] {
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
   color: #454545;
-  height: 25px;
-  line-height: 25px;
+  height: 30px;
+  line-height: 32px;
   font-weight: bold;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   vertical-align: middle;
   position: relative;
   cursor: pointer;
-  color: #454545;
+  color: #6c6c6c;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -194,15 +190,15 @@ button {
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
   color: #454545;
-  height: 25px;
-  line-height: 25px;
+  height: 30px;
+  line-height: 32px;
   font-weight: bold;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   vertical-align: middle;
   position: relative;
   cursor: pointer;
-  color: #454545;
+  color: #6c6c6c;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -229,15 +225,15 @@ input[type=submit] {
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
   color: #454545;
-  height: 25px;
-  line-height: 25px;
+  height: 30px;
+  line-height: 32px;
   font-weight: bold;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   vertical-align: middle;
   position: relative;
   cursor: pointer;
-  color: #454545;
+  color: #6c6c6c;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -264,15 +260,15 @@ input[type=submit]:hover {
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
   color: #454545;
-  height: 25px;
-  line-height: 25px;
+  height: 30px;
+  line-height: 32px;
   font-weight: bold;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   vertical-align: middle;
   position: relative;
   cursor: pointer;
-  color: #454545;
+  color: #6c6c6c;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -336,30 +332,30 @@ select.widget {
   font-weight: bold;
   text-align: left;
   vertical-align: middle;
-  color: #454545;
+  color: #6c6c6c;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
-  padding: 3px 3px 3px 12px;
+  padding: 5px 3px 3px 12px;
   border: 0;
   box-shadow: 0 1px 2px rgba(100, 100, 100, 0.7);
   -moz-box-shadow: 0 1px 2px rgba(100, 100, 100, 0.7);
   -webkit-box-shadow: 0 1px 2px rgba(100, 100, 100, 0.7);
   width: 250px;
-  height: 25px;
+  height: 30px;
   line-height: 16px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   background-color: #f4f4f4;
   background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#e0e0e0));
   background: -moz-linear-gradient(left top, #f4f4f4, #e0e0e0);
-  background: url(/images/form_select.png) no-repeat left 0px, url(/images/form_select.png) no-repeat right -60px, url(/images/form_select.png) repeat-x left -30px;
+  background: url(images/form_select.png) no-repeat left 0px, url(images/form_select.png) no-repeat right -60px, url(images/form_select.png) repeat-x left -30px;
 }
 select.widget:hover {
   background-color: #ffffff;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eaeaea));
   background: -moz-linear-gradient(left top, #ffffff, #eaeaea);
-  background: url(/images/form_select.png) no-repeat left 0px, url(/images/form_select.png) no-repeat right -60px, url(/images/form_select.png) repeat-x left -30px;
+  background: url(images/form_select.png) no-repeat left -90px, url(images/form_select.png) no-repeat right -150px, url(images/form_select.png) repeat-x left -120px;
 }
 .select_widget {
   -khtml-appearance: none;
@@ -368,30 +364,30 @@ select.widget:hover {
   font-weight: bold;
   text-align: left;
   vertical-align: middle;
-  color: #454545;
+  color: #6c6c6c;
   border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
-  padding: 3px 3px 3px 12px;
+  padding: 5px 3px 3px 12px;
   border: 0;
   box-shadow: 0 1px 2px rgba(100, 100, 100, 0.7);
   -moz-box-shadow: 0 1px 2px rgba(100, 100, 100, 0.7);
   -webkit-box-shadow: 0 1px 2px rgba(100, 100, 100, 0.7);
   width: 250px;
-  height: 25px;
+  height: 30px;
   line-height: 16px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   background-color: #f4f4f4;
   background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#e0e0e0));
   background: -moz-linear-gradient(left top, #f4f4f4, #e0e0e0);
-  background: url(/images/form_select.png) no-repeat left 0px, url(/images/form_select.png) no-repeat right -60px, url(/images/form_select.png) repeat-x left -30px;
+  background: url(images/form_select.png) no-repeat left 0px, url(images/form_select.png) no-repeat right -60px, url(images/form_select.png) repeat-x left -30px;
 }
 .select_widget:hover {
   background-color: #ffffff;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eaeaea));
   background: -moz-linear-gradient(left top, #ffffff, #eaeaea);
-  background: url(/images/form_select.png) no-repeat left 0px, url(/images/form_select.png) no-repeat right -60px, url(/images/form_select.png) repeat-x left -30px;
+  background: url(images/form_select.png) no-repeat left -90px, url(images/form_select.png) no-repeat right -150px, url(images/form_select.png) repeat-x left -120px;
 }
 .widget_select-options_container {
   background-color: #f4f4f4;
@@ -495,10 +491,6 @@ form fieldset > section p.info {
   color: #999999;
 }
 form fieldset > section > div { margin-bottom: 8px; }
-*:focus {
-  outline: 0;
-  outline: none;
-}
 .calendar {
   -webkit-user-select: none;
   color: #424242;
@@ -621,10 +613,6 @@ form fieldset > section > div { margin-bottom: 8px; }
 }
 .calendar > section.footer nav a:first-child { margin-right: 10px; }
 .calendar > section.footer nav a:last-child { margin-left: 10px; }
-*:focus {
-  outline: 0;
-  outline: none;
-}
 body {
   background: #fffaf0 url('images/pattern.png') repeat left top;
   font: normal 62.5% sans-serif;
@@ -678,10 +666,6 @@ body {
   text-shadow: none;
   display: inline-block;
 }
-*:focus {
-  outline: 0;
-  outline: none;
-}
 #sf_admin_container h1 {
   width: 100%;
   color: #002255;
@@ -734,8 +718,8 @@ ul.sf_admin_actions li a {
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
   color: #454545;
-  height: 25px;
-  line-height: 25px;
+  height: 30px;
+  line-height: 32px;
   font-weight: bold;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -778,8 +762,8 @@ ul.sf_admin_td_actions li a {
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
   color: #454545;
-  height: 25px;
-  line-height: 25px;
+  height: 30px;
+  line-height: 32px;
   font-weight: bold;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
