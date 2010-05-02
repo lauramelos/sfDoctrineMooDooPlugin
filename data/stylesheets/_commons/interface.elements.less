@@ -37,25 +37,7 @@
   }
 }
 
-/* different type of buttons 
-.link-button-class {
-  .link-button;
 
-  padding: 0 16px 0 35px;
-
-  background: url('/images/classes_16_GREY.png') no-repeat 11px 7px,
-              url(/images/link_button.png) no-repeat left    0px,
-              url(/images/link_button.png) no-repeat right -72px,
-              url(/images/link_button.png) repeat-x  left  -36px;
-
-  :hover {
-    background: url('/images/classes_16.png') no-repeat 11px 7px,
-                url(/images/link_button.png) no-repeat left  -108px,
-                url(/images/link_button.png) no-repeat right -180px,
-                url(/images/link_button.png) repeat-x  left  -144px;
-  }
-}
- */
 /*********/
 /* Forms */
 /*********/
@@ -192,7 +174,7 @@ background: url(images/form_select.png) no-repeat left   0px,
 
 
 /*** input text ***/
-input[type=text], input[type=email], input[type=password]  {
+input[type=text], input[type=email], input[type=password], input[type=date], .input_date  {
   font-size: 14px;
   font-family: Verdana,Arial,Helvetica,sans-serif;
   .box-sizing;
@@ -205,11 +187,15 @@ input[type=text], input[type=email], input[type=password]  {
 }
 
 input[type=email] {
-  min-width: 200px
+  width: 200px
 }
+input[type=date], .input_date {
+  width: 200px;
+  background: #fff url(images/icn.calendar.png) no-repeat right 5px;
+}
+
 input[type="file"]{
   background-color: #FFF;
-
 }
 input.error {
   background-color: #fee3e3;
