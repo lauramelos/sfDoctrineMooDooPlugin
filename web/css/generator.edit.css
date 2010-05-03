@@ -148,6 +148,10 @@ section, nav { display: block; }
   position: absolute;
 }
 .tip_inside:hover .tip { display: block; }
+*:focus {
+  outline: 0;
+  outline: none;
+}
 input[type=button] {
   -khtml-appearance: none;
   font-size: 14px;
@@ -491,6 +495,10 @@ form fieldset > section p.info {
   color: #999999;
 }
 form fieldset > section > div { margin-bottom: 8px; }
+*:focus {
+  outline: 0;
+  outline: none;
+}
 .calendar {
   -webkit-user-select: none;
   color: #424242;
@@ -613,6 +621,10 @@ form fieldset > section > div { margin-bottom: 8px; }
 }
 .calendar > section.footer nav a:first-child { margin-right: 10px; }
 .calendar > section.footer nav a:last-child { margin-left: 10px; }
+*:focus {
+  outline: 0;
+  outline: none;
+}
 body {
   background: #fffaf0 url('images/pattern.png') repeat left top;
   font: normal 62.5% sans-serif;
@@ -665,6 +677,10 @@ body {
 #sf_admin_container ul.error_list li {
   text-shadow: none;
   display: inline-block;
+}
+*:focus {
+  outline: 0;
+  outline: none;
 }
 #sf_admin_container h1 {
   width: 100%;

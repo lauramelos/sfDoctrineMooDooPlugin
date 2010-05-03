@@ -44,6 +44,10 @@ section, nav { display: block; }
   outline: 0;
   outline: none;
 }
+*:focus {
+  outline: 0;
+  outline: none;
+}
 input[type=button] {
   -khtml-appearance: none;
   font-size: 14px;
@@ -387,6 +391,10 @@ form fieldset > section p.info {
   color: #999999;
 }
 form fieldset > section > div { margin-bottom: 8px; }
+*:focus {
+  outline: 0;
+  outline: none;
+}
 .tip { margin: 0 0 -20px -20px; }
 .tip .content {
   background: rgba(0, 0, 0, 0.8);
@@ -491,6 +499,10 @@ form fieldset > section > div { margin-bottom: 8px; }
   position: absolute;
 }
 .tip_inside:hover .tip { display: block; }
+*:focus {
+  outline: 0;
+  outline: none;
+}
 body {
   background: #fffaf0 url('images/pattern.png') repeat left top;
   font: normal 62.5% sans-serif;
@@ -543,6 +555,10 @@ body {
 #sf_admin_container ul.error_list li {
   text-shadow: none;
   display: inline-block;
+}
+*:focus {
+  outline: 0;
+  outline: none;
 }
 #sf_admin_container h1 {
   width: 100%;
@@ -653,10 +669,10 @@ ul.error_list li {
   background-color: #f5f5ea;
   color: #442222;
 }
-.sf_admin_list table tbody tr:hover { background-color: #aaeeff; }
+.sf_admin_list table tbody tr:hover { background-color: #ddeeff; }
 .sf_admin_list table tbody tr td {
   font-size: 1.3em;
-  padding: 2px 5px;
+  padding: 0px 5px;
   color: #333333;
   vertical-align: middle;
 }
