@@ -336,13 +336,12 @@ select.widget:hover {
   color: #ffffff;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
-input[type=text], input[type=email], input[type=password] {
+input[type=text], input[type=email], input[type=password], input[type=date], .input_date, .input_text {
   font-size: 14px;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   color: #454545;
-  width: 300px;
   height: 32px;
   line-height: 26px;
   margin: 2px 0;
@@ -353,7 +352,11 @@ input[type=text], input[type=email], input[type=password] {
   -webkit-box-shadow: 0px 1px 0px #ffffff;
   text-shadow: 0px 1px 0px #ffffff;
 }
-input[type=email] { min-width: 200px; }
+input[type=email] { width: 200px; }
+input[type=date], .input_date {
+  width: 200px;
+  background: #ffffff url(images/icn.calendar.png) no-repeat right 5px;
+}
 input[type="file"] { background-color: #ffffff; }
 input.error {
   background-color: #fee3e3;
@@ -556,6 +559,13 @@ body {
   text-shadow: none;
   display: inline-block;
 }
+
+.mask { background: rgba(0, 0, 0, 0.8); }
+.mask-transparent { background: rgba(0, 0, 0, 0.01); }
+.mask-fixed {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+}
 *:focus {
   outline: 0;
   outline: none;
@@ -584,6 +594,7 @@ ul.error_list li {
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   text-shadow: none;
+  font-size: 1em;
 }
 .sf_admin_list table thead {
   height: 28px;
@@ -592,7 +603,6 @@ ul.error_list li {
   text-shadow: 0 1px 0 #333333, 1px 1px 0 #333333, -1px 1px 0 #333333, -1px -1px 0 #333333;
 }
 .sf_admin_list table thead a { color: #00ddff; }
-.sf_admin_list table thead tr { font-size: 1.2em; }
 .sf_admin_list table thead tr th {
   text-align: left;
   padding-left: 5px;
@@ -671,8 +681,13 @@ ul.error_list li {
 }
 .sf_admin_list table tbody tr:hover { background-color: #ddeeff; }
 .sf_admin_list table tbody tr td {
+<<<<<<< HEAD:web/css/generator.list.css
   font-size: 1.3em;
   padding: 0px 5px;
+=======
+  font-size: 0.8em;
+  padding: 2px 5px;
+>>>>>>> e620a24797db4b5491d25dfbdd94d91158ba2d89:web/css/generator.list.css
   color: #333333;
   vertical-align: middle;
 }

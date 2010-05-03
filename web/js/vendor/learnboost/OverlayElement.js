@@ -49,7 +49,7 @@ OverlayElement = new Class({
   },
   
   show: function(){
-    this.shown = true;    
+    this.shown = true;
     if (this.options.injectTo) this.element.inject.apply(this.element, this.options.injectTo);
     if (this.options.mask !== false) this.mask();
     this.element.setStyle('z-index', this.options.zIndex).setStyle('display', 'block');
