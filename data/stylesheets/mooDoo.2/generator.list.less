@@ -7,11 +7,6 @@
 @import "generator.default";
 
 
-#sf_admin_container {
-  h1 {
-    font-size: 2em
-  }
-}
 /* Filas del listado */
 .sf_admin_list {
   a {
@@ -38,6 +33,7 @@
         th {
          text-align: left;
          padding-left: 5px;
+         font-size: 1.2em;
         }
       }
     }
@@ -139,6 +135,7 @@
 
             span.label_action {
               text-decoration: underline;
+              color:#0ab;
             }
 
             > ul {
@@ -215,5 +212,78 @@ ul.sf_admin_actions {
 
   a {
     .link-button;
+  }
+}
+.sf_admin_list {
+  form#msg-form{
+    table {
+      .border-radius;
+      border: none;
+      caption{
+        background-color: #888;
+        color: #FFF;
+        font-size: 1.6em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+        .border-radius(6px);
+        .box-shadow(0, 1px, 5px, rgba(0, 0, 0, 0.3));
+      }
+      label{font-size: 1.2em;}
+      > tfoot {
+        border-top:1px solid #888;
+        > tr > td {
+          background-color: #FFF;
+          padding:10px;
+          color:#000000;
+          font-weight:bold;
+          text-align:center;
+          text-transform:uppercase;
+        }
+      }
+      > tbody {
+      .border-radius;
+       >tr{
+        border: none;
+         > td, > th {
+           border: none;
+           padding:5px;
+        }
+        > th{
+            background-color: #888;
+            color: #FFF;
+          }
+        > td{
+          background-color: white;
+          border: none;
+          input[type="text"], textarea {
+            width:100%;
+          }
+          table.mceLayout{
+            width:100%!important;
+           .border-radius(0);
+           .box-shadow(0, 0, 0, rgba(0, 0, 0, 0));
+            border:1px solid #ADADAD;
+            > tbody > tr > td{
+                 padding:0;
+                 .mceToolbar{
+                 td{
+                   background-color: #F0F0EE;
+                 }
+                 .border-radius(0);
+                  .box-shadow(0, 0, 0, rgba(0, 0, 0, 0));
+                  }
+               }
+            }
+          }
+        }
+      
+      tr:first-of-type th {
+        .border-radius(8px 0 0 0);
+      }
+    }
+   }
   }
 }
