@@ -193,7 +193,7 @@ input[type="checkbox"] {
   width: 15px;
   height: 16px;
   margin: 0;
-  background: transparent url('/images/form.png') no-repeat 0px 0px;
+  background: transparent url('images/form.png') no-repeat 0px 0px;
 }
 input[type="checkbox"]:hover { cursor: pointer; }
 input[type="checkbox"]:checked { background-position: -20px 0px; }
@@ -202,7 +202,7 @@ input[type="radio"] {
   width: 15px;
   height: 16px;
   margin: 0;
-  background: transparent url('/images/form.png') no-repeat 0px 0px;
+  background: transparent url('images/form.png') no-repeat 0px 0px;
 }
 input[type="radio"]:hover { cursor: pointer; }
 input[type="radio"]:checked { background-position: -20px 0px; }
