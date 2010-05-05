@@ -297,7 +297,7 @@ input[type="checkbox"] {
   width: 15px;
   height: 16px;
   margin: 0;
-  background: transparent url('images/form.png') no-repeat 0px 0px;
+  background: transparent url('/images/form.png') no-repeat 0px 0px;
 }
 input[type="checkbox"]:hover { cursor: pointer; }
 input[type="checkbox"]:checked { background-position: -20px 0px; }
@@ -306,7 +306,7 @@ input[type="radio"] {
   width: 15px;
   height: 16px;
   margin: 0;
-  background: transparent url('images/form.png') no-repeat 0px 0px;
+  background: transparent url('/images/form.png') no-repeat 0px 0px;
 }
 input[type="radio"]:hover { cursor: pointer; }
 input[type="radio"]:checked { background-position: -20px 0px; }
@@ -706,6 +706,7 @@ body {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 0 #333333, 1px 1px 0 #333333, -1px 1px 0 #333333, -1px -1px 0 #333333;
 }
 .sf_admin_list h1 {
   background-color: #555555;
@@ -722,6 +723,7 @@ body {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 0 #333333, 1px 1px 0 #333333, -1px 1px 0 #333333, -1px -1px 0 #333333;
 }
 ul.error_list li {
   color: #aa0000;
