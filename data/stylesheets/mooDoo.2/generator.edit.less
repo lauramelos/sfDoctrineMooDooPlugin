@@ -1,16 +1,20 @@
 @import "../_commons/clear";
+@import "../_commons/common";
+
 @import "../_commons/interface.tip";
 @import "../_commons/interface.elements";
 @import "../_commons/interface.elements.calendar";
-
-@import "generator.global";
+@import "../menu/default";
+@import "../layout/default";
+/*@import "generator.global";*/
 @import "generator.default";
 
 
 /* Styles primarily to form EDIT */
 .sf_admin_form {
   width: 100%;
-
+  font-size: 1.2em;
+  color:#525252;
   h2 {
     .text-shadow;
     margin: 0 0 5px 0; padding: 0;
@@ -21,16 +25,29 @@
     .box-sizing;
     margin-bottom: 5px;
     position: relative;
-
-    > div {
-      margin: 5px 1px;
-      border: 1px solid rgba(200, 200, 200, 0.2);
-      background-color: #f8f8f8;
-      padding: 2px;
+    .border-radius(4px);
+    background-color: #F5F5EA;
+    > div  {
+      padding: 5px;
       .border-radius(4px);
-
-      label {
-        color: #444;
+      > div {
+        > div.content {
+          display:inline-block;
+          }
+          > label {
+            font-size: 1.2em;
+            background-color: #525252;
+            .border-radius(4px);
+            .text-shadow(1px, 1px, 0, rgba(0, 0, 0, 1));
+            font-weight:bold;
+            display:inline-block;
+            color: #fff;
+            width:15%;
+            padding: 10px;
+            margin: 0 20px 0 0;
+            vertical-align:top;
+            text-align: right;
+          }
       }
     }
   }
@@ -42,16 +59,8 @@ ul.sf_admin_actions, ul.sf_admin_td_actions {
   display: inline-block;
   margin: 5px 0;
   padding: 5px;
-  background-color: rgba(200, 200, 200, 0.7);
-  .border-radius;
-
-  li {
-    display: inline-block;
-    a {
-      .link-button;
-    }
   }
-}
+
 
 ul.sf_admin_td_actions {
   margin: 0; padding: 0;

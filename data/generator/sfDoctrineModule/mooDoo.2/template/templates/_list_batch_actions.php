@@ -10,6 +10,7 @@
   [?php $form = new BaseForm(); if ($form->isCSRFProtected()): ?]
     <input type="hidden" name="[?php echo $form->getCSRFFieldName() ?]" value="[?php echo $form->getCSRFToken() ?]" />
   [?php endif; ?]
-  <input type="submit" value="[?php echo __('go', array(), 'sf_admin') ?]" />
+  <?php /*<input type="submit" value="[?php echo __('go', array(), 'sf_admin') ?]" /> */ ?>
+  <input type="submit" value="&nbsp;" title="[?php echo __('Go')?]" />
 </li>
 <?php endif; ?>
