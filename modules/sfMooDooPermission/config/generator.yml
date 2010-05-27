@@ -1,25 +1,25 @@
 generator:
-  class: sfDoctrineGenerator
+  class:                              sfDoctrineGenerator
   param:
-    model_class:           sfMooDooPermission
-    theme:                 admin
-    non_verbose_templates: true
-    with_show:             false
-    singular:              ~
-    plural:                ~
-    route_prefix:          sf_moodoo_permission
-    with_doctrine_route:   true
+    model_class:                      sfGuardPermission
+    theme:                            mooDoo.2
+    non_verbose_templates:            true
+    with_show:                        false
+    singular:                         ~
+    plural:                           ~
+    route_prefix:                     sf_moodoo_permission
+    with_doctrine_route:              true
 
     config:
       list:
-        title: Permission list
-        display: [=name, description, created_at, updated_at]
+        title:                        Permission list
+        display:                      [=name, description, created_at, updated_at]
 
       edit:
-        title: Editing Permission "%%name%%"
+        title:                        Editing Permission "%%name%%"
 
       new:
-        title: New Permission
+        title:                        New Permission
 
       form:
-        display: [name, description, groups_list, users_list]
+        display:                      [name, description, groups_list, users_list]
