@@ -29,7 +29,7 @@ class sfMooDooFormSignin extends BasesfGuardFormSignin
     ));
 
     $this->validatorSchema->setPostValidator(new sfGuardValidatorUser());
-
+    $this->widgetSchema->setLabel('remember', 'Remember User?');
     $this->widgetSchema->setNameFormat('signin[%s]');
   }
 }
