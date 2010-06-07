@@ -31,7 +31,7 @@ class sfDoctrineMooDooPluginConfiguration extends sfPluginConfiguration {
       sfConfig::set('app_sfDoctrineMooDooPlugin_js_dir', '../sfDoctrineMooDooPlugin/js');
     }
 
-    if (sfConfig::get('app_sf_moodoo_plugin_routes_register', true) && in_array('sfMooDooAuth', sfConfig::get('sf_enabled_modules', array()))) {
+    /*if (sfConfig::get('app_sf_moodoo_plugin_routes_register', true) && in_array('sfMooDooAuth', sfConfig::get('sf_enabled_modules', array()))) {
       $this->dispatcher->connect('routing.load_configuration', array('sfMooDooRouting', 'listenToRoutingLoadConfigurationEvent'));
     }
 
@@ -39,6 +39,6 @@ class sfDoctrineMooDooPluginConfiguration extends sfPluginConfiguration {
       if (in_array($module, sfConfig::get('sf_enabled_modules', array()))) {
         $this->dispatcher->connect('routing.load_configuration', array('sfMooDooRouting', 'addRouteForAdmin'.str_replace('sfMooDoo', '', $module)));
       }
-    }
+    }*/
   }
 }

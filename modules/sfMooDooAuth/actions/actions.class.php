@@ -22,6 +22,7 @@ class sfMooDooAuthActions extends BasesfGuardAuthActions
 public function executeSignin($request)
   {
     $user = $this->getUser();
+    
     if ($user->isAuthenticated())
     {
       return $this->redirect('@homepage');

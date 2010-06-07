@@ -128,6 +128,10 @@ select{
     /*background-color: #8fa;*/
   }
 }
+select[multiple]{
+  height: auto;
+
+}
 .select_widget() {
   -khtml-appearance: none;      /* reset */
  /* background-color: #f4f4f4;*/
@@ -195,7 +199,18 @@ background: url(images/form_select.png) no-repeat left   0px,
   }
 }
 
-
+textarea{
+  font-size: 14px;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  .box-sizing;
+  color: #454545;
+  width:250px;height: 96px;
+  line-height: 26px;
+  margin: 2px 0; padding: 3px 5px;
+  border: 1px solid #adadad;
+  .box-shadow(0px, 1px, 0px, #fff);
+  .text-shadow(0px, 1px, 0px, #fff);
+}
 
 
 /*** input text ***/
@@ -204,7 +219,7 @@ input[type=text], input[type=email], input[type=password], input[type=date], .in
   font-family: Verdana,Arial,Helvetica,sans-serif;
   .box-sizing;
   color: #454545;
-  height: 32px;
+  width:250px;height: 32px;
   line-height: 26px;
   margin: 2px 0; padding: 3px 5px;
   border: 1px solid #adadad;
@@ -280,4 +295,8 @@ form {
       }
     }
   }
+}
+
+.mceToolbar table.mceToolbar{
+  float:left
 }

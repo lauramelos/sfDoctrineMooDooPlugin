@@ -1,0 +1,8 @@
+#rutas de la guia de estilo
+StyleGuide_form:
+  url:   /form
+  param: { module: sfMooDooStyleGuide, action: form }
+
+StyleGuide_list:
+  url:   /list
+  param: { module: sfMooDooStyleGuide, action: list }

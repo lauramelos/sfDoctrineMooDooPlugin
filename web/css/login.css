@@ -70,8 +70,10 @@ body div#wrapper #login {
   margin: 0 auto 0;
 }
 body div#wrapper #login img {
-  width: 210px;
-  margin: 25px 100px;
+  display:block;
+  height:90px;
+  margin:0 100px 25px;
+  width:210px;
 }
 body div#wrapper #login input[type=text] {
   border: none;
