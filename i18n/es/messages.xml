@@ -462,7 +462,7 @@
         <source>Remember User?</source>
         <target>Recordar Usuario?</target>
       </trans-unit>
-    </body>
+
     <trans-unit id="101">
       <source>Gallery</source>
       <target>Galería</target>
@@ -492,6 +492,6 @@
       <source>Galleries list</source>
       <target>Lista de galerías</target>
     </trans-unit>
-        
+    </body>
   </file>
 </xliff>

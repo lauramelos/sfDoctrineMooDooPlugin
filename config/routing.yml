@@ -6,3 +6,28 @@ StyleGuide_form:
 StyleGuide_list:
   url:   /list
   param: { module: sfMooDooStyleGuide, action: list }
+
+sf_moodoo_user:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardUser
+    module:               sfMooDooUser
+    prefix_path:          /users
+    column:               id
+    with_wildcard_routes: true
+sf_moodoo_group:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardGroup
+    module:               sfMooDooGroup
+    prefix_path:          /groups
+    column:               id
+    with_wildcard_routes: true
+sf_moodoo_permission:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardPermission
+    module:               sfMooDooPermission
+    prefix_path:          /permission
+    column:               id
+    with_wildcard_routes: true
