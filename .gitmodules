@@ -1,0 +1,6 @@
+[submodule "web/js/vendor/mootools-core"]
+	path = web/js/vendor/mootools-core
+	url = git://github.com/mootools/mootools-core.git
+[submodule "web/js/vendor/mootools-more"]
+	path = web/js/vendor/mootools-more
+	url = git://github.com/mootools/mootools-more.git
