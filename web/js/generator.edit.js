@@ -11,9 +11,6 @@ window.addEvent('domready', function () {
   inputsDateTime.each(function (inputDate) {
     inputDate.addCalendar();
 
-    // contruimos la hora
-    console.debug ("inputDate.getNext() -> ", inputDate.getNext());
-
     inputDate.getNext().addEvents({
       blur: function (ev) {
         var dates = inputDate.get('value').split(' ');

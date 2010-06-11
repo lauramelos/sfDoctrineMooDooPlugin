@@ -1,4 +1,4 @@
-<div id="sf_admin_container" class="admin_list">
+<div id="sf_admin_container" class="admin-list">
 
   <h1>Listado de páginas</h1>
 
@@ -10,11 +10,11 @@
         <div id="sf_admin_bar">
 
       <nav class="menu">
-        <a class="opt_filter" title="Filtro">Filtro</a>
+        <a class="opt-filter" title="Filtro">Filtro</a>
       </nav>
 
 
-<div class="sf_admin_filter">
+<div class="sf-admin-filter">
 
   <form action="/backend.php/pages/filter/action" method="post">
     <table cellspacing="0">
@@ -22,14 +22,14 @@
         <tr>
 
           <td colspan="2">
-            <a class="filter_cancel">Cancel</a>
+            <a class="filter-cancel">Cancel</a>
             <input type="hidden" name="page_filters[_csrf_token]" value="6eb54152c59a512bb158ae61151516e2" id="page_filters__csrf_token" />            <a onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'post'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_csrf_token'); m.setAttribute('value', '8d623fd14f05d02f79b3a9fe568e246d'); f.appendChild(m);f.submit();return false;" href="/backend.php/pages/filter/action?_reset">Reiniciar</a>            <input type="submit" value="Filtrar" />
           </td>
         </tr>
       </tfoot>
       <tbody>
 
-                            <tr class="sf_admin_form_row sf_admin_foreignkey sf_admin_filter_field_parent_id">
+                            <tr class="sf_admin_form_row sf_admin_foreignkey sf-admin-filter_field_parent_id">
     <td>
       <label for="page_filters_parent_id">Parent</label>    </td>
     <td>
@@ -79,7 +79,7 @@
 
           </td>
   </tr>
-                            <tr class="sf_admin_form_row sf_admin_foreignkey sf_admin_filter_field_author_id">
+                            <tr class="sf_admin_form_row sf_admin_foreignkey sf-admin-filter_field_author_id">
     <td>
       <label for="page_filters_author_id">Autor</label>    </td>
     <td>
@@ -93,7 +93,7 @@
 </select>
           </td>
   </tr>
-                            <tr class="sf_admin_form_row sf_admin_text sf_admin_filter_field_title">
+                            <tr class="sf_admin_form_row sf_admin_text sf-admin-filter_field_title">
     <td>
       <label for="page_filters_title">Título</label>    </td>
 
@@ -102,7 +102,7 @@
       <input type="text" id="page_filters_title" name="page_filters[title][text]" value="" /><br />
           </td>
   </tr>
-                            <tr class="sf_admin_form_row sf_admin_text sf_admin_filter_field_description">
+                            <tr class="sf_admin_form_row sf_admin_text sf-admin-filter_field_description">
     <td>
       <label for="page_filters_description">Descripción</label>    </td>
     <td>
@@ -111,7 +111,7 @@
       <input type="text" id="page_filters_description" name="page_filters[description][text]" value="" /><br /><input type="checkbox" name="page_filters[description][is_empty]" id="page_filters_description_is_empty" /> <label for="page_filters_description_is_empty">is empty</label>
           </td>
   </tr>
-                            <tr class="sf_admin_form_row sf_admin_text sf_admin_filter_field_abstract">
+                            <tr class="sf_admin_form_row sf_admin_text sf-admin-filter_field_abstract">
     <td>
       <label for="page_filters_abstract">Resúmen</label>    </td>
     <td>
@@ -120,7 +120,7 @@
       <input type="text" id="page_filters_abstract" name="page_filters[abstract][text]" value="" /><br /><input type="checkbox" name="page_filters[abstract][is_empty]" id="page_filters_abstract_is_empty" /> <label for="page_filters_abstract_is_empty">is empty</label>
           </td>
   </tr>
-                            <tr class="sf_admin_form_row sf_admin_text sf_admin_filter_field_picture">
+                            <tr class="sf_admin_form_row sf_admin_text sf-admin-filter_field_picture">
     <td>
       <label for="page_filters_picture">Imagen</label>    </td>
     <td>
@@ -129,7 +129,7 @@
       <input type="text" id="page_filters_picture" name="page_filters[picture][text]" value="" /><br /><input type="checkbox" name="page_filters[picture][is_empty]" id="page_filters_picture_is_empty" /> <label for="page_filters_picture_is_empty">is empty</label>
           </td>
   </tr>
-                            <tr class="sf_admin_form_row sf_admin_date sf_admin_filter_field_created_at">
+                            <tr class="sf_admin_form_row sf_admin_date sf-admin-filter_field_created_at">
     <td>
       <label for="page_filters_created_at">Creado en</label>    </td>
     <td>
@@ -271,7 +271,7 @@
 </select><br />
           </td>
   </tr>
-                            <tr class="sf_admin_form_row sf_admin_date sf_admin_filter_field_updated_at">
+                            <tr class="sf_admin_form_row sf_admin_date sf-admin-filter_field_updated_at">
     <td>
       <label for="page_filters_updated_at">Actualizado en</label>    </td>
 
@@ -413,7 +413,7 @@
 </select><br />
           </td>
   </tr>
-                            <tr class="sf_admin_form_row sf_admin_text sf_admin_filter_field_categories_list">
+                            <tr class="sf_admin_form_row sf_admin_text sf-admin-filter_field_categories_list">
     <td>
       <label for="page_filters_categories_list">Lista de categorías</label>    </td>
 
@@ -440,22 +440,22 @@
     <div id="sf_admin_content">
             <form action="/backend.php/pages/batch/action" method="post">
 
-                <div class="sf_admin_list">
+                <div class="sf_admin-list">
   <div class="placelholder"></div>
       <table cellspacing="0">
       <thead>
         <tr>
-          <th id="sf_admin_list_batch_actions"><input id="sf_admin_list_batch_checkbox" type="checkbox" onclick="checkAll();" /></th>
-          <th class="sf_admin_text sf_admin_list_th_parent">
+          <th id="sf_admin-list_batch_actions"><input id="sf_admin-list_batch_checkbox" type="checkbox" onclick="checkAll();" /></th>
+          <th class="sf_admin_text sf_admin-list_th_parent">
   Página padre</th>
 
-<th class="sf_admin_text sf_admin_list_th_author">
+<th class="sf_admin_text sf_admin-list_th_author">
   Autor</th>
-<th class="sf_admin_text sf_admin_list_th_title">
+<th class="sf_admin_text sf_admin-list_th_title">
       <a href="/backend.php/pages?sort=title&amp;sort_type=asc">Título</a>  </th>
-<th class="sf_admin_date sf_admin_list_th_created_at">
+<th class="sf_admin_date sf_admin-list_th_created_at">
       <a href="/backend.php/pages?sort=created_at&amp;sort_type=asc">Creado en</a>  </th>
-          <th id="sf_admin_list_th_actions">Acciones</th>
+          <th id="sf_admin-list_th_actions">Acciones</th>
 
         </tr>
       </thead>
@@ -493,14 +493,14 @@
             <td>
   <input type="checkbox" name="ids[]" value="1" class="sf_admin_batch_checkbox" />
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   </td>
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   damian</td>
 
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Hotel</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   30 de marzo de 2010 19:50</td>
             <td class="object_actions">
   <div class="object_actions_container">
@@ -516,13 +516,13 @@
   <input type="checkbox" name="ids[]" value="2" class="sf_admin_batch_checkbox" />
 
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   </td>
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   damian</td>
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Casino</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   30 de marzo de 2010 19:50</td>
 
             <td class="object_actions">
@@ -538,14 +538,14 @@
             <td>
   <input type="checkbox" name="ids[]" value="3" class="sf_admin_batch_checkbox" />
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   </td>
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   admin</td>
 
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Banquetes &amp; Convenciones</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   30 de marzo de 2010 19:50</td>
             <td class="object_actions">
   <div class="object_actions_container">
@@ -561,13 +561,13 @@
 
   <input type="checkbox" name="ids[]" value="4" class="sf_admin_batch_checkbox" />
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   </td>
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   damian</td>
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Espectáculos</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   30 de marzo de 2010 19:50</td>
 
             <td class="object_actions">
@@ -583,14 +583,14 @@
             <td>
   <input type="checkbox" name="ids[]" value="5" class="sf_admin_batch_checkbox" />
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   </td>
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   damian</td>
 
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Promociones</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   30 de marzo de 2010 19:50</td>
             <td class="object_actions">
   <div class="object_actions_container">
@@ -606,13 +606,13 @@
   <input type="checkbox" name="ids[]" value="6" class="sf_admin_batch_checkbox" />
 
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   Hotel</td>
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   </td>
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Promos</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   4 de mayo de 2010 14:43</td>
 
             <td class="object_actions">
@@ -628,14 +628,14 @@
             <td>
   <input type="checkbox" name="ids[]" value="7" class="sf_admin_batch_checkbox" />
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   Promos</td>
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   damian</td>
 
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Noche de Bodas</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   4 de mayo de 2010 12:02</td>
             <td class="object_actions">
   <div class="object_actions_container">
@@ -651,13 +651,13 @@
   <input type="checkbox" name="ids[]" value="8" class="sf_admin_batch_checkbox" />
 
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   </td>
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   damian</td>
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Gastronomía</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   30 de marzo de 2010 19:50</td>
 
             <td class="object_actions">
@@ -673,14 +673,14 @@
             <td>
   <input type="checkbox" name="ids[]" value="9" class="sf_admin_batch_checkbox" />
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   Gastronomía</td>
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   </td>
 
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Seasons</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   3 de mayo de 2010 05:57</td>
             <td class="object_actions">
   <div class="object_actions_container">
@@ -696,13 +696,13 @@
   <input type="checkbox" name="ids[]" value="10" class="sf_admin_batch_checkbox" />
 
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   Gastronomía</td>
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   </td>
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Belterra</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   3 de mayo de 2010 06:05</td>
 
             <td class="object_actions">
@@ -718,14 +718,14 @@
             <td>
   <input type="checkbox" name="ids[]" value="11" class="sf_admin_batch_checkbox" />
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   Gastronomía</td>
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   </td>
 
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Jokers</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   3 de mayo de 2010 06:08</td>
             <td class="object_actions">
   <div class="object_actions_container">
@@ -741,13 +741,13 @@
   <input type="checkbox" name="ids[]" value="12" class="sf_admin_batch_checkbox" />
 
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   </td>
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   damian</td>
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Gift Shop</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   30 de marzo de 2010 19:50</td>
 
             <td class="object_actions">
@@ -763,14 +763,14 @@
             <td>
   <input type="checkbox" name="ids[]" value="13" class="sf_admin_batch_checkbox" />
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   Banquetes &amp; Convenciones</td>
 
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   </td>
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Salón Belterra</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   1 de mayo de 2010 15:21</td>
             <td class="object_actions">
   <div class="object_actions_container">
@@ -786,14 +786,14 @@
 
   <input type="checkbox" name="ids[]" value="14" class="sf_admin_batch_checkbox" />
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   Banquetes &amp; Convenciones</td>
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   </td>
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Catering &amp; Menús</td>
 
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   1 de mayo de 2010 17:08</td>
             <td class="object_actions">
   <div class="object_actions_container">
@@ -808,14 +808,14 @@
             <td>
   <input type="checkbox" name="ids[]" value="15" class="sf_admin_batch_checkbox" />
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   Hotel</td>
 
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   damian</td>
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Habitaciones</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   30 de marzo de 2010 19:50</td>
             <td class="object_actions">
   <div class="object_actions_container">
@@ -831,13 +831,13 @@
 
   <input type="checkbox" name="ids[]" value="16" class="sf_admin_batch_checkbox" />
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   Hotel</td>
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   damian</td>
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Restaurante</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
 
   30 de marzo de 2010 19:50</td>
             <td class="object_actions">
@@ -853,14 +853,14 @@
             <td>
   <input type="checkbox" name="ids[]" value="17" class="sf_admin_batch_checkbox" />
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   Hotel</td>
 
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   damian</td>
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Piscina</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   30 de marzo de 2010 19:50</td>
             <td class="object_actions">
   <div class="object_actions_container">
@@ -876,14 +876,14 @@
 
   <input type="checkbox" name="ids[]" value="18" class="sf_admin_batch_checkbox" />
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   Hotel</td>
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   damian</td>
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Spa &amp; Fitness</td>
 
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   30 de marzo de 2010 19:50</td>
             <td class="object_actions">
   <div class="object_actions_container">
@@ -898,14 +898,14 @@
             <td>
   <input type="checkbox" name="ids[]" value="19" class="sf_admin_batch_checkbox" />
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   Hotel</td>
 
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   damian</td>
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Servicios</td>
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   30 de marzo de 2010 19:50</td>
             <td class="object_actions">
   <div class="object_actions_container">
@@ -921,14 +921,14 @@
 
   <input type="checkbox" name="ids[]" value="20" class="sf_admin_batch_checkbox" />
 </td>
-            <td class="sf_admin_text sf_admin_list_td_parent">
+            <td class="sf_admin_text sf_admin-list_td_parent">
   Banquetes &amp; Convenciones</td>
-<td class="sf_admin_text sf_admin_list_td_author">
+<td class="sf_admin_text sf_admin-list_td_author">
   </td>
-<td class="sf_admin_text sf_admin_list_td_title">
+<td class="sf_admin_text sf_admin-list_td_title">
   Salón Rainbow</td>
 
-<td class="sf_admin_date sf_admin_list_td_created_at">
+<td class="sf_admin_date sf_admin-list_td_created_at">
   1 de mayo de 2010 15:08</td>
             <td class="object_actions">
   <div class="object_actions_container">

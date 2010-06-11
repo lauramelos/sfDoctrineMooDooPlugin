@@ -14,26 +14,40 @@
     bottom: 10px; right:10px;
     nav.menu {
         position: static;
-    a.opt_filter {
+    a.opt-filter {
       .action_button;
       background-position: -300px top;
       :hover {background-position: -350px top;}
       }
      }
-    div.sf_admin_filter {
-      display: none;
-      z-index: 200;
-      background-color: rgba(240,250,255, 0.6);
-      padding: 5px;
-      font-size: 11px;
-      position: absolute;
-      left: 20px; top: 20px;
-    }
   }
 }
 /* Filas del listado */
 
-.sf_admin_list {
+/* filtros */
+div.sf-admin-filter {
+    display: none;
+    background-color: rgba(240,250,255, 0.7);
+    padding: 5px;
+    font-size: 11px;
+    .border-radius(12px);
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    width: 400px;
+    border: 8px solid rgba(50, 50, 120, 0.4);
+
+    > form {
+      width: 400px;
+    }
+
+    a.filter-cancel {
+      cursor: pointer;
+    }
+  }
+/* end filtros */
+
+.sf_admin-list {
   a {
     text-decoration: none;
   }
@@ -227,7 +241,7 @@
 }
 
 
-.sf_admin_list {
+.sf_admin-list {
   form#msg-form{
     table {
       .border-radius;
