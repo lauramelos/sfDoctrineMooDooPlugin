@@ -1,4 +1,4 @@
-<div class="sf_admin_list">
+<div class="sf_admin-list">
   <div class="placelholder"></div>
   [?php if (!$pager->getNbResults()): ?]
     <p>[?php echo __('No result', array(), 'sf_admin') ?]</p>
@@ -7,11 +7,11 @@
       <thead>
         <tr>
 <?php if ($this->configuration->getValue('list.batch_actions')): ?>
-          <th id="sf_admin_list_batch_actions"><input id="sf_admin_list_batch_checkbox" type="checkbox" onclick="checkAll();" /></th>
+          <th id="sf_admin-list_batch_actions"><input id="sf_admin-list_batch_checkbox" type="checkbox" onclick="checkAll();" /></th>
 <?php endif; ?>
           [?php include_partial('<?php echo $this->getModuleName() ?>/list_th_<?php echo $this->configuration->getValue('list.layout') ?>', array('sort' => $sort)) ?]
 <?php if ($this->configuration->getValue('list.object_actions')): ?>
-          <th id="sf_admin_list_th_actions">[?php echo __('Actions', array(), 'sf_admin') ?]</th>
+          <th id="sf_admin-list_th_actions">[?php echo __('Actions', array(), 'sf_admin') ?]</th>
 <?php endif; ?>
         </tr>
       </thead>
@@ -50,7 +50,7 @@
 /* <![CDATA[ */
 function checkAll()
 {
-  var boxes = document.getElementsByTagName('input'); for(var index = 0; index < boxes.length; index++) { box = boxes[index]; if (box.type == 'checkbox' && box.className == 'sf_admin_batch_checkbox') box.checked = document.getElementById('sf_admin_list_batch_checkbox').checked } return true;
+  var boxes = document.getElementsByTagName('input'); for(var index = 0; index < boxes.length; index++) { box = boxes[index]; if (box.type == 'checkbox' && box.className == 'sf_admin_batch_checkbox') box.checked = document.getElementById('sf_admin-list_batch_checkbox').checked } return true;
 }
 /* ]]> */
 </script>

@@ -53,13 +53,31 @@
   /* end error */
 
 
-/* Mask */
-.mask { background: rgba(0, 0, 0, 0.8); }
-.mask-transparent { background: rgba(0, 0, 0, 0.01); }
-.mask-fixed {
-  background: rgba(0, 0, 0, 0.8);
+/* MooDoo Mask */
+.md-mask {
   position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 100, 160, 0.2);
+  left: 0;
+  top: 0;
+  text-align: center;
 }
+
+.mask-container {
+  text-align: left;
+  display: inline-block;
+  min-width: 400px;
+  background-color: rgba(0,0,0, 0.3);
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 150px auto 0;
+}
+/* end MooDoo Mask */
+
 
 /* actions */
 ul.sf_admin_actions {

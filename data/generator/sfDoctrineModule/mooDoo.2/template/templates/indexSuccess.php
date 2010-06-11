@@ -2,7 +2,7 @@
 [?php include_partial('<?php echo $this->getModuleName() ?>/assets') ?]
 [?php include_partial('<?php echo $this->getModuleName() ?>/assets.list') ?]
 
-<div id="sf_admin_container" class="admin_list">
+<div id="sf_admin_container" class="admin-list">
 
   <h1>[?php echo <?php echo $this->getI18NString('list.title') ?> ?]</h1>
 
@@ -13,9 +13,9 @@
     </div>
 
     <?php if ($this->configuration->hasFilterForm()): ?>
-    <div id="sf_admin_bar">
+    <div id="sf_admin_bar" class="sf-admin-bar">
       <nav class="menu">
-        <a class="opt_filter" title="[?php echo __('Filter'); ?]">[?php echo __('Filter'); ?]</a>
+        <a class="opt-filter" title="[?php echo __('Filter'); ?]">[?php echo __('Filter'); ?]</a>
       </nav>
 
       [?php include_partial('<?php echo $this->getModuleName() ?>/filters', array('form' => $filters, 'configuration' => $configuration)) ?]
