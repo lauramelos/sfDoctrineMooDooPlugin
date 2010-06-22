@@ -17,7 +17,7 @@ OverlayElement = new Class({
       }
     },
     injectTo: ['body', 'bottom'],
-    zIndex: 60      
+    zIndex: 500
   },
   
   initialize: function(element, atts){

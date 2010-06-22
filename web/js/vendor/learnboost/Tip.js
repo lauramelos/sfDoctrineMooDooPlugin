@@ -1,16 +1,16 @@
 Tip = new Class({
-  
+
   Extends: OverlayElement,
-  
+
   options: {
     'class': 'tip',
     mask: {
       options: {
         'class': 'mask-transparent'
-      }      
+      }
     }
   },
-  
+
   initialize: function(element, options){
     this.setOptions(options);
     this.parent(new Element('div', {'class': this.options.class }).adopt(
@@ -18,13 +18,13 @@ Tip = new Class({
       new Element('div', {'class': 'footer'})
     ), options);
   }
-  
+
 });
 
 Element.implement({
-  
+
   addTip: function(element, options){
-    var overlay = new Tip(element, $merge({      
+    var overlay = new Tip(element, $merge({
       position: {
         relativeTo: this,
         position: 'upperRight',
@@ -41,16 +41,16 @@ Element.implement({
       }
     });
   },
-  
+
   addDropdown: function(element, options){
     var overlay = new Tip(element, $merge({
-      'class': 'tip-dropdown',      
+      'class': 'tip-dropdown',
       position: {
         relativeTo: this,
         position: {
           'x': 'left',
           'y': 'bottom'
-        }        
+        }
       }
     }, options));
     return this.store('tip:overlay', overlay).addEvents({
@@ -60,5 +60,5 @@ Element.implement({
       }
     });
   }
-  
+
 });

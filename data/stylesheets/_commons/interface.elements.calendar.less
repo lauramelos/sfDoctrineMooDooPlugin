@@ -1,12 +1,10 @@
 @import "common";
 
-.calendar {
-  /*text-shadow: rgba(0,0,0,.01) 0 0 1px;  /* hack */
+.calendar-picker {
   -webkit-user-select: none;
-
   color: #424242;
-  
-  /*.box-shadow(-1px, 1px, 3px, rgba(255, 0, 0, 0.4));*/
+  height: 200px;
+  position: relative;
 
   > .header {
     position: relative;
@@ -55,13 +53,13 @@
     -webkit-box-shadow: 0 1px 0 #828282, 1px 1px 0 #828282, -1px 1px 0 #828282;
     border: 1px solid #000;
     border-top: 0;
-    padding: 0 1px 2px;
+    padding: 0 3px 2px;
     background-color: transparent;
     .border-radius(0 0 4px 4px);
 
     table {
-      width: 100%;
-      border-collapse: collapse;
+      border-spacing: 0;
+      border-collapse: separate;
 
       td, th {
         text-align: center;
@@ -70,7 +68,6 @@
       thead {
         tr {
           th {
-            /*background: #f2f2f2;*/
             font-size: 10px;
             color: #626262;
             padding: 0;
@@ -88,60 +85,57 @@
         td {
           padding: 0; margin: 0;
           font-weight: bold;
-          font-size: 13px;
+          font-size: 12px;
           color: #424242;
-          border-top: 1px solid #b9c6d5;
-          border-right: 1px solid #b9c6d5;
-          width: 22px; height: 18px;
 
-          div {
-            border-left: 1px solid #e6eaeb;
-            border-top: 1px solid #e6eaeb;
-            height: 100%;
-            line-height: 20px;
-            text-align: center;
-          }
+          border-left: 1px solid rgba(255, 255, 255, 0.4);
+          border-top: 1px solid rgba(255, 255, 255, 0.4);
+          border-right: 1px solid rgba(0, 0, 0, 0.1);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
-          /*background-color: #fafafa;*/
+          width: 20px; height: 20px;
+          .text-shadow(0, 1px, 0, #fff);
+          padding-right: 2px;
+          line-height: 20px;
+          text-align: right;
 
-          /*
+          background-color: rgba(200, 240, 255, 0.4);
+
           :nth-child(6) {
-            background-color: #f2f2f2;
-            color: #444;
+            background-color: rgba(200, 200, 200, 0.1);
+            color: #555;
           }
-          */
-          /*
           :nth-child(7) {
-            background-color: #e0e0e0;
-            color: #888;
-          }*/
+            background-color: rgba(200, 200, 200, 0.2);
+            color: #777;
+          }
 
           :hover {
-            background-color: #c0ecff;
-            color: #007ee4;
+            background-color: #4af;
+            color: #444;
             cursor: pointer;
           }
-        }
 
-        td.notInMonth {
-          cursor: default;
-          /*background-color: #f0f0f0;*/
-          color: #a9a9a9
-        }
+          .notInMonth {
+            cursor: default;
+            color: #777;
+          }
 
-        td.active {
-          
-          div {
-            border: 0;
-            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#90c7f3), to(#348ee9));
-            .text-shadow(0, 1px, 1px, rgba(0, 0, 0, 0.4));
+          .active {
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0af), to(#348ee9));
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
             color: #FFF;
           }
-        }
 
-        td.today {
-          background: #FFA;
-          color: #040;
+          .today{
+            background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#0af), to(#348ee9));
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+            color: #FFF;
+          }
+
+          div {
+            height: 100%;
+          }
         }
       }
     }
@@ -177,3 +171,37 @@
     }
   }
 }
+/*
+  > section.footer
+    :width 180px
+    :display block
+    :position absolute
+    :bottom 30px
+    nav
+      :text-align center
+      a
+        :position relative
+        :text-decoration none
+        :color #fff
+        :font-weight bold
+        :width 70px
+        :height 19px
+        :line-height 16px
+        :text-shadow 0 0 1px rgba(50, 50, 50, 0.8)
+        :background -webkit-gradient(linear, 0% 0%, 0% 100%, from(#656565), to(#474747))
+        :-webkit-box-shadow 0 -1px 0 #8c8c8c, 0 -2px 0 #6a6a6a, 0 -3px 1px #000, 0 1px 1px rgba(0,0,0,0.5)
+        :display inline-block
+        :-webkit-border-radius 8px
+        &:hover
+          :-webkit-box-shadow 0 -1px 0 #aaa, 0 -2px 0 #888, 0 -3px 1px #000, 0 1px 1px rgba(0,0,0,0.5)
+          :background -webkit-gradient(linear, 0% 0%, 0% 100%, from(#757575), to(#474747))
+        &:active
+          :color #ddd
+          :top 1px
+          :-webkit-box-shadow 0 -1px 0 #6c6c6c, 0 -2px 0 #4a4a4a, 0 -3px 1px #000, 0 1px 1px rgba(0,0,0,0.5)
+          :background -webkit-gradient(linear, 0% 0%, 0% 100%, from(#555), to(#323232))
+      a:first-child
+        :margin-right 10px
+      a:last-child
+        :margin-left 10px
+*/

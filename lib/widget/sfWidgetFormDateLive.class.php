@@ -6,7 +6,7 @@
  *
  */
 
-class sfWidgetFormDateAndTime extends  sfWidgetFormInputText {
+class sfWidgetFormDateLive extends  sfWidgetFormInputText {
 
   /*
   protected function configure($options = array(), $attributes = array()) {
@@ -21,16 +21,17 @@ class sfWidgetFormDateAndTime extends  sfWidgetFormInputText {
   }
 */
   public function render($name, $value = null, $attributes = array(), $errors = array()) {
-    
-    $select_parent = parent::render($name, $value, $attributes, $errors);
+
+    $this->setOption('type', 'date');
+
+    $html_parent = parent::render($name, $value, $attributes, $errors);
 
     //$foreing_id = $this->getOption('foreing_id') ? $this->getOption('foreing_id') : strtolower($this->getOption('model').'_id');
     $option_name = $this->getOption('option_name') ? $this->getOption('option_name') : 'widget-time';
     //$where = $this->getOption('where') ? ' where="'.$this->getOption('where').'"' : '';
 
     $conten_tag = '<div>';
-    $conten_tag.= $select_parent;
-    $conten_tag.='<input type=#text" class="input_text" name="'.$option_name.'" />';
+    $conten_tag.= $html_parent;
     $conten_tag.= '</div>';
 
     return $conten_tag;

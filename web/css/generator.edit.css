@@ -159,11 +159,13 @@ section, nav { display: block; }
   outline: 0;
   outline: none;
 }
-.calendar {
+.calendar-picker {
   -webkit-user-select: none;
   color: #424242;
+  height: 200px;
+  position: relative;
 }
-.calendar > .header {
+.calendar-picker > .header {
   position: relative;
   border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
@@ -174,7 +176,7 @@ section, nav { display: block; }
   border-bottom: 0;
   height: 26px;
 }
-.calendar > .header nav a {
+.calendar-picker > .header nav a {
   top: 10px;
   text-decoration: none;
   display: inline-block;
@@ -182,87 +184,96 @@ section, nav { display: block; }
   width: 8px;
   height: 9px;
 }
-.calendar > .header nav a.previous {
+.calendar-picker > .header nav a.previous {
   position: absolute;
   left: 10px;
 }
-.calendar > .header nav a.next {
+.calendar-picker > .header nav a.next {
   position: absolute;
   right: 10px;
   background-position: right top;
 }
-.calendar > .header p { margin: 0; }
-.calendar > .header p.title {
+.calendar-picker > .header p { margin: 0; }
+.calendar-picker > .header p.title {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
   text-align: center !important;
 }
-.calendar > section.content {
+.calendar-picker > section.content {
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e9edf1), to(#cbd1d8));
   -webkit-box-shadow: 0 1px 0 #828282, 1px 1px 0 #828282, -1px 1px 0 #828282;
   border: 1px solid #000000;
   border-top: 0;
-  padding: 0 1px 2px;
+  padding: 0 3px 2px;
   background-color: transparent;
   border-radius: 0 0 4px 4px;
   -moz-border-radius: 0 0 4px 4px;
   -webkit-border-radius: 0 0 4px 4px;
 }
-.calendar > section.content table {
-  width: 100%;
-  border-collapse: collapse;
+.calendar-picker > section.content table {
+  border-spacing: 0;
+  border-collapse: separate;
 }
-.calendar > section.content table td { text-align: center; }
-.calendar > section.content table th { text-align: center; }
-.calendar > section.content table thead tr th {
+.calendar-picker > section.content table td { text-align: center; }
+.calendar-picker > section.content table th { text-align: center; }
+.calendar-picker > section.content table thead tr th {
   font-size: 10px;
   color: #626262;
   padding: 0;
 }
-.calendar > section.content table tbody td {
+.calendar-picker > section.content table tbody td {
   padding: 0;
   margin: 0;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 12px;
   color: #424242;
-  border-top: 1px solid #b9c6d5;
-  border-right: 1px solid #b9c6d5;
-  width: 22px;
-  height: 18px;
-}
-.calendar > section.content table tbody td div {
-  border-left: 1px solid #e6eaeb;
-  border-top: 1px solid #e6eaeb;
-  height: 100%;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  width: 20px;
+  height: 20px;
+  text-shadow: 0 1px 0 #ffffff;
+  padding-right: 2px;
   line-height: 20px;
-  text-align: center;
+  text-align: right;
+  background-color: rgba(200, 240, 255, 0.4);
 }
-.calendar > section.content table tbody td:hover {
-  background-color: #c0ecff;
-  color: #007ee4;
+.calendar-picker > section.content table tbody td:nth-child(6) {
+  background-color: rgba(200, 200, 200, 0.1);
+  color: #555555;
+}
+.calendar-picker > section.content table tbody td:nth-child(7) {
+  background-color: rgba(200, 200, 200, 0.2);
+  color: #777777;
+}
+.calendar-picker > section.content table tbody td:hover {
+  background-color: #44aaff;
+  color: #444444;
   cursor: pointer;
 }
-.calendar > section.content table tbody td.notInMonth {
+.calendar-picker > section.content table tbody td .notInMonth {
   cursor: default;
-  color: #a9a9a9;
+  color: #777777;
 }
-.calendar > section.content table tbody td.active div {
-  border: 0;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#90c7f3), to(#348ee9));
+.calendar-picker > section.content table tbody td .active {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#00aaff), to(#348ee9));
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
   color: #ffffff;
 }
-.calendar > section.content table tbody td.today {
-  background: #ffffaa;
-  color: #004400;
+.calendar-picker > section.content table tbody td .today {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#00aaff), to(#348ee9));
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  color: #ffffff;
 }
-.calendar > section.footer { height: 30px; }
-.calendar > section.footer nav {
+.calendar-picker > section.content table tbody td div { height: 100%; }
+.calendar-picker > section.footer { height: 30px; }
+.calendar-picker > section.footer nav {
   text-align: center;
   margin-top: 8px;
 }
-.calendar > section.footer nav a {
+.calendar-picker > section.footer nav a {
   text-decoration: none;
   color: #ffffff;
   font-weight: bold;
@@ -279,8 +290,8 @@ section, nav { display: block; }
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
 }
-.calendar > section.footer nav a:first-child { margin-right: 10px; }
-.calendar > section.footer nav a:last-child { margin-left: 10px; }
+.calendar-picker > section.footer nav a:first-child { margin-right: 10px; }
+.calendar-picker > section.footer nav a:last-child { margin-left: 10px; }
 *:focus {
   outline: 0;
   outline: none;
@@ -750,7 +761,7 @@ input[type=text], input[type=email], input[type=password], input[type=date], .in
 }
 input[type=email] { width: 200px; }
 input[type=date], .input_date {
-  width: 200px;
+  width: 120px;
   background: #ffffff url(images/icn.calendar.png) no-repeat right 5px;
 }
 input[type="file"] { background-color: #ffffff; }
@@ -841,11 +852,26 @@ ul.error_list li {
   text-shadow: 0 1px 1px #888888;
   display: inline-block;
 }
-.mask { background: rgba(0, 0, 0, 0.8); }
-.mask-transparent { background: rgba(0, 0, 0, 0.01); }
-.mask-fixed {
-  background: rgba(0, 0, 0, 0.8);
+.md-mask {
   position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 100, 160, 0.2);
+  left: 0;
+  top: 0;
+  text-align: center;
+}
+.mask-container {
+  text-align: left;
+  display: inline-block;
+  min-width: 400px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 150px auto 0;
 }
 ul.sf_admin_actions {
   list-style: none;

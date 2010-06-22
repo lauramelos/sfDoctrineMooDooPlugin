@@ -1,4 +1,20 @@
+// jquery
+if ('jQuery' in window){
+  jQuery.noConflict();
+  window.j = jQuery;
+}
+
+// mootools
+window.$ = document.id;
+
 window.addEvent('domready', function () {
+
+  j('input[type=date]').live('focus', function(){
+    this.addCalendar().show();
+  });
+
+
+
   // add datapicker to input type date
   var inputsDate = $$('input.input_date');
 

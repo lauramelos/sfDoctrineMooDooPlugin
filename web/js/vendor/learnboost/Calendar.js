@@ -17,16 +17,16 @@ requires:
 */
 
 (function(){
-  
+
   var now = new Date();
 
   /*
  * Caldendar Class.
  */
   Calendar = new Class({
-  
+
     Implements: [Options, Events],
-  
+
     options: {
       cssClassName: 'calendar',
       injectTo: '#calendar',
@@ -179,7 +179,7 @@ requires:
       this.render();
       return this.fireEvent('changeMonth');
     },
-  
+
     previous: function(){
       this.objDate.decrement('month');
       this.render();
@@ -244,7 +244,7 @@ requires:
  */
 
   Calendar.MiniSchedule = new Class({
-  
+
     Implements: [Options, Events],
 
     options: {
@@ -266,7 +266,7 @@ requires:
       this.elems = {};
       this.name = name;
       this.date = date;
-    
+
       this.objCalendar = objCalendar;
       this.elems.injectTo = $(this.options.injectTo);
 
