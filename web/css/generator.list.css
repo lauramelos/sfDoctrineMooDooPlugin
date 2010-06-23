@@ -519,12 +519,17 @@ input[type=date], .input_date {
   width: 200px;
   background: #ffffff url(images/icn.calendar.png) no-repeat right 5px;
 }
+.input_date_separate { width: auto; }
 input[type="file"] { background-color: #ffffff; }
 input.error {
   background-color: #fee3e3;
   border: 1px solid #c3a0a0;
 }
-label { display: inline-block; }
+label {
+  display: inline-block;
+  padding: 0 10px 0 0;
+  text-align: right;
+}
 label:hover { cursor: pointer; }
 label.check {
   color: #454545;
@@ -1051,6 +1056,7 @@ div.sf-admin-filter a.filter-cancel { cursor: pointer; }
   padding: 2px 10px;
   text-decoration: none;
   color: #001133;
+  line-height: 25px;
 }
 .sf_admin-list table tbody tr td.object_actions div.object_actions_container > ul li a:hover {
   background-color: #22aabb;
