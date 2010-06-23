@@ -4,6 +4,7 @@
 
 [?php use_javascript(sfConfig::get('app_sfDoctrineMooDooPlugin_js_dir').'/vendor/mootools-core.js', 'first') ?]
 [?php use_javascript(sfConfig::get('app_sfDoctrineMooDooPlugin_js_dir').'/vendor/mootools-more.js', 'first') ?]
+[?php use_javascript(sfConfig::get('app_sfDoctrineMooDooPlugin_js_dir').'/vendor/jquery-compress.js', 'first') ?]
 
 <?php
 /*

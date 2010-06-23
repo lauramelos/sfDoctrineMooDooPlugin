@@ -79,11 +79,7 @@ Generator.List = new Class({
     this.elems.adminBar.filter.getElement('.filter-cancel').addEvent('click', function () {
       self.hideFilter();
     })
-      
     // end filter
-
-
-    console.debug ("this.elems.adminBar.filter -> ", this.elems.adminBar.filter);
   },
 
   /* menu methods */

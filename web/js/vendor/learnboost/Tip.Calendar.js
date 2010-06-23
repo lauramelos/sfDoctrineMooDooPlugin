@@ -1,15 +1,17 @@
 Tip.Calendar = new Class({
-  
+
   Extends: Tip,
-  
+
   options: {
-  
+
   },
 
   initialize: function(element, options){
     this.setOptions(options);
+    var self = this;
 
     this.calendar = new Calendar({
+      cssClassName:'calendar-picker',
       injectTo: false,
       formatTitle: '%B %Y',
       nav: {
@@ -18,25 +20,23 @@ Tip.Calendar = new Class({
       }
     });
 
-    element.store('calendar', this.calendar);
+    this.parent(this.calendar.el, options);
 
     this.calendar.addEvents({
       selectedDay: function (el, date, changeDay) {
-        element.set('value', date.format('%m/%d/%Y').toString());
-        element.retrieve('tip:overlay').hide();
+        element.set('value', date.format('%Y-%m-%d').toString());
+        self.hide();
       }.bind(this),
       closed: function () {
-        element.retrieve('tip:overlay').hide();
+        self.hide();
       }
     })
-
-    this.parent(this.calendar.el, options);
   }
 });
 
 
 Element.implement({
-  addCalendar: function(element, options){
+  addCalendar: function(options){
     var overlay = new Tip.Calendar(this, $merge({
       injectTo: [this.getParent(), 'bottom'],
       'class': 'tip tip-calendar',
@@ -46,11 +46,9 @@ Element.implement({
         edge: 'bottomLeft'
       }
     }, options));
-    return this.store('tip:overlay', overlay).addEvents({
-      focus: function(ev){
-        ev.stop();
-        overlay.show();
-      }
-    });
+
+    this.store('tip:overlay', overlay);
+
+    return overlay;
   }
 });
