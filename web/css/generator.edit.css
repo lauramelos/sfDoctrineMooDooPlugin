@@ -1155,6 +1155,32 @@ ul.sf_admin_actions > li.sf_admin_action_list a:hover { background-position: -80
   vertical-align: top;
   text-align: right;
 }
+.sf_admin_form fieldset table.subform {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 10px 3px;
+}
+.sf_admin_form fieldset table.subform caption {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 1.2em;
+  background-color: #525252;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  text-shadow: 1px 1px 0 #000000;
+  font-weight: bold;
+  color: #ffffff;
+  width: 99%;
+  padding: 10px 0;
+  margin: 10px 20px 0 2px;
+  vertical-align: top;
+}
+.sf_admin_form fieldset table.subform input {
+  width: 123px;
+  margin: 2px;
+}
+.sf_admin_form fieldset table.subform input.comment { width: 323px; }
 ul.sf_admin_actions, ul.sf_admin_td_actions {
   list-style: none;
   display: inline-block;

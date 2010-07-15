@@ -10,6 +10,7 @@ window.$ = document.id;
 window.addEvent('domready', function () {
 
   j('input[type=date]').live('focus', function(){
+    console.log('acá!');
     this.addCalendar().show();
   });
 
